@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БароОкс - Производство и продажа медицинских барокамер</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --accent-color: #198754;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .stat-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .comparison-card {
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 20px;
+            height: 100%;
+        }
+        
+        .comparison-card h5 {
+            margin-top: 20px;
+        }
+        
+        .comparison-card ul {
+            padding-left: 20px;
+        }
+        
+        .comparison-card .pros {
+            color: var(--accent-color);
+        }
+        
+        .comparison-card .cons {
+            color: #dc3545;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .partner-logo {
+            max-height: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .guarantee-section {
+            background-color: #f8f9fa;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-light py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        <a href="/" class="text-decoration-none">
+                            <h3 class="text-primary mb-0">БароОкс</h3>
+                        </a>
+                        <p class="mb-0 ms-3 text-muted d-none d-md-block">Производство и продажа медицинских барокамер</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex flex-column flex-md-row justify-content-md-end align-items-center">
+                        <a href="tel:88000000000" class="text-decoration-none text-dark fw-bold fs-5">8-800-000-00-00</a>
+                        <a href="#" class="btn btn-outline-primary ms-md-3 mt-2 mt-md-0">Заказать обратный звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-4">Кислородная барокамера: стабильный поток новых клиентов и доход от 240000р* в месяц без сезонных колебаний</h1>
+                    <h3 class="mb-4">БароОкс - первая профессиональная медицинская барокамера, простая в управлении</h3>
+                    <p class="lead mb-4">Получите коммерческое предложение в течении 15 минут</p>
+                    
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control form-control-lg" id="userName" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="email" class="form-control form-control-lg" placeholder="Введите ваш e-mail">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Получить коммерческое предложение</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">Внедрите инновационную услугу и получите мощный поток клиентов</h2>
+                    <p class="lead">До 37 новых клиентов ежемесячно с барокамерой БароОкс</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="image.png" alt="Просторная барокамера" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Единственная по-настоящему просторная камера с анатомическим креслом</h4>
+                    <p>Ваши пациенты улучшают здоровье с премиальным уровнем комфорта: впервые процедуру можно проходить как сидя, так и лежа в эргономичном кресле, родители могут приходить процедуру вместе с детьми и пользоваться мобильным устройством.</p>
+                    <p>В запатентованном корпусе камеры исключены случаи боязни замкнутых пространств у пациента. Кондиционер поддерживает комфортную температуру внутри камеры во время процедуры.</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6">
+                    <img src="image2.png" alt="Управление барокамерой" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Клинически доказанная эффективность при простом и понятном управлении барокамерой</h4>
+                    <p>Первая барокамера с полным медицинским спектром воздействия на организм пациента, подтвержденным клиническими испытаниями Федерального исследования центра Минздрава РФ.</p>
+                    <p>При этом управление барокамерой осуществляется через интуитивно понятное меню. Обучение врачей и других специалистов проходят за 15 минут, для эксплуатации камеры не нужен дополнительный сотрудник.</p>
+                    <a href="#" class="btn btn-outline-primary">Смотреть полный перечень показаний</a>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="image3.png" alt="Разные учреждения" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Разработана для всех видов учреждений:</h4>
+                    <p>Федеральных и областных медицинских центров, лечебно-профилактических учреждений, санаторно-курортных учреждений, индустрии спорта и красоты</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">Барокамеры БароОкс сочетают в себе плюсы 2-х видов барокамер</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="comparison-card">
+                        <h4 class="text-center">Профессиональная медицинская барокамера</h4>
+                        <img src="image4.png" alt="Медицинская барокамера" class="img-fluid rounded my-3">
+                        
+                        <h5 class="cons">Недостатки</h5>
+                        <ul class="cons">
+                            <li>большой расход кислорода</li>
+                            <li>повышенная пожароопасность</li>
+                            <li>пациент в положении лежа</li>
+                            <li>высокая стоимость</li>
+                        </ul>
+                        
+                        <h5 class="pros">Достоинства</h5>
+                        <ul class="pros">
+                            <li>доказанный терапевтический эффект</li>
+                            <li>соответствие госстандартам</li>
+                            <li>многолетняя практика использования</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="comparison-card">
+                        <h4 class="text-center">Кислородные капсулы с жестким и мягким корпусом</h4>
+                        <img src="image5.png" alt="Кислородные капсулы" class="img-fluid rounded my-3">
+                        
+                        <h5 class="cons">Недостатки</h5>
+                        <ul class="cons">
+                            <li>не соответствуют госстандартам</li>
+                            <li>пациент в положении лежа</li>
+                            <li>не доказан терапевтический эффект</li>
+                        </ul>
+                        
+                        <h5 class="pros">Достоинства</h5>
+                        <ul class="pros">
+                            <li>малый расход кислорода</li>
+                            <li>минимум требований к помещению</li>
+                            <li>меньшая стоимость</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <img src="image6.png" alt="Барокамера БароОкс" class="img-fluid rounded">
+                    <div class="mt-3">
+                        <button class="btn btn-outline-primary">Открыть техническую спецификацию</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-4">Барокамеры БароОкс собрали только лучшие характеристики</h3>
+                    
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span>Соответствие госстандартам</span>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span>Эксклюзивное анатомическое кресло</span>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span>Лучшее соответствие цена/качество</span>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span>Работает автономно</span>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span>Простая установка</span>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span>Гарантия безопасности</span>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span>Клиническая эффективность</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-5">
+                    <h3>Попробовав однажды БароОкс, ваши клиенты просто не смогут вернуться к барокамерам старого поколения</h3>
+                </div>
+                
+                <div class="col-md-3 text-center mb-4">
+                    <img src="image7.png" alt="Регулируемое кресло" class="img-fluid rounded mb-3">
+                    <p>Регулируемое кресло позволит выбрать индивидуально удобную позицию во время сеанса</p>
+                </div>
+                
+                <div class="col-md-3 text-center mb-4">
+                    <img src="image8.png" alt="Большое стекло" class="img-fluid rounded mb-3">
+                    <p>Благодаря большой площади остекления у пациента не возникает эффекта "замкнутого пространства"</p>
+                </div>
+                
+                <div class="col-md-3 text-center mb-4">
+                    <img src="image9.png" alt="Совместные сеансы" class="img-fluid rounded mb-3">
+                    <p>Просторный корпус позволяет проводить совместные сеансы родителей с детьми</p>
+                </div>
+                
+                <div class="col-md-3 text-center mb-4">
+                    <img src="image10.png
+                    " alt="Развлечения во время процедуры" class="img-fluid rounded mb-3">
+                    <p>Можно смотреть любимые фильмы, пользоваться мобильным устройством и слушать музыку во время процедуры</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Быстрая окупаемость барокамеры</h3>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <div class="stat-card">
+                                <div class="stat-value">10 месяцев</div>
+                                <div class="stat-label">окупаемость</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-card">
+                                <div class="stat-value">240 000 ₽</div>
+                                <div class="stat-label">ежемесячный доход</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat-card">
+                                <div class="stat-value">37</div>
+                                <div class="stat-label">новых клиентов в месяц</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="mb-4">Получите персональный расчет окупаемости для вашего учреждения:</p>
+                    
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <a href="#" class="btn btn-outline-primary">Госучереждение</a>
+                        <a href="#" class="btn btn-outline-primary">Частная клиника</a>
+                        <a href="#" class="btn btn-outline-primary">Салон красоты</a>
+                        <a href="#" class="btn btn-outline-primary">Санаторий</a>
+                        <a href="#" class="btn btn-outline-primary">Другое</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 rounded">
+                        <h4 class="mb-4">Получите персонализированный расчет в течение 5 минут</h4>
+                        
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="userName2" placeholder="Введите ваше имя">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Введите ваш e-mail">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Получить расчет</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h3 class="mb-4">Барокамера разработана совместно с ЦКБ "Лазурит" при поддержке Минздрава РФ</h3>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3 text-center mb-4">
+                    <h5>Японское качество</h5>
+                    <p>Высококачественные компоненты, выпускаемые японской компанией SMC-Пневматик, применяются в самых современных разработках в сфере промышленной автоматизации</p>
+                </div>
+                
+                <div class="col-md-3 text-center mb-4">
+                    <h5>60-летний опыт в разработке</h5>
+                    <p>Продукт разработан совместно с АО "Центральное конструкторское бюро "Лазурит". Более 60 лет проектирует различные подводные суда, а также ведет разработку глубоководной спасательной техники</p>
+                </div>
+                
+                <div class="col-md-3 text-center mb-4">
+                    <h5>Поддержка Фонда Инноваций</h5>
+                    <p>Разработано при поддержке Российского Фонда Содействия Инновациям</p>
+                </div>
+                
+                <div class="col-md-3 text-center mb-4">
+                    <h5>Официальная гарантия 2 года или на 20000 сеансов</h5>
+                    <p>Гарантия 2 года на элементы пневмосистемы и корпус и год на кислородный концентратор</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="section-padding guarantee-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Забронируйте барокамеру до конца месяца</h3>
+                    <p class="mb-4">Вы получите: доставку в любой регион РФ, установку и обучение персонала бесплатно</p>
+                    
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Барокамера</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Доставка в любой регион РФ</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Установка</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Обучение персонала</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 rounded">
+                        <h4 class="mb-4">Оставьте заявку для бронирования</h4>
+                        
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="userName3" placeholder="Введите ваше имя">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Введите ваш e-mail">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Забронировать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>БароОкс</h5>
+                    <p>Производство и продажа медицинских барокамер</p>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <h5>Контакты</h5>
+                    <p><a href="tel:88000000000" class="text-white text-decoration-none">8-800-000-00-00</a></p>
+                    <a href="#" class="btn btn-outline-light">Заказать обратный звонок</a>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <h5>Информация</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">О компании</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Документация</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row pt-4 border-top">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 БароОкс. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
